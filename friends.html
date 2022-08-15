@@ -10,14 +10,14 @@
   <body>
     <div class="status-bar">
       <div class="status-bar__column">
-        <span>No Service</span>
+        <span>Optus</span>
         <i class="fa-solid fa-wifi"></i>
       </div>
       <div class="status-bar__column">
-        <span>18:43</span>
+        <span>11:09</span>
       </div>
       <div class="status-bar__column">
-        <span>110%</span>
+        <span>99%</span>
         <i class="fa-solid fa-battery-full fa-lg"></i>
         <i class="fa-solid fa-bolt"></i>
       </div>
@@ -29,20 +29,75 @@
           <a class="nav__link" href="friends.html">
             <i class="fa-solid fa-user fa-lg"></i></a></li>
         <li class="nav__btn">
-          <a class="nav__link" href="#">
+          <a class="nav__link" href="chats.html">
+            <span class="nav__noti badge">1</span>
             <i class="fa-regular fa-comment fa-lg"></i></a></li>
         <li class="nav__btn">
-          <a class="nav__link" href="#">
-            <i class="fa-solid fa-magnifying-glass fa-lg"></i></a></li>
+          <a class="nav__link" href="find.html">
+           <i class="fa-solid fa-magnifying-glass fa-lg"></i></a></li>
         <li class="nav__btn">
-          <a class="nav__link" href="#">
+          <a class="nav__link" href="more.html">
+            <span class="nav__noti_new"></span>
             <i class="fa-solid fa-ellipsis fa-lg"></i></a></li>
       </ul>
     </nav>
 
-    <script
-      src="https://kit.fontawesome.com/e2ad3dbc93.js"
-      crossorigin="anonymous">
+    <header class="screen-header">
+			<h1 class="screen-header__title">Friends</h1>
+			<div class="screen-header__icons">
+				<span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+				<span><i class="fa-solid fa-music fa-lg"></i></span>
+				<span><i class="fa-solid fa-gear fa-lg"></i></span>
+			</div>
+		</header>
+
+		<a id="friends-display-link">
+			<i class="fa-solid fa-circle-info"></i> Friends' Names Display
+			<i class="fa-solid fa-chevron-right fa-xs"></i>
+		</a>
+
+		<main class="friends-screen">
+			<div class="user-component">
+				<div class="user-component__column">
+					<img class="user-component__avatar user-component__avatar--xl" src="myugaa.jpg"/>
+					<div class="user-component__text">
+						<h4 class="user-component__title">Myugaa</h4>
+						<h6 class="user-component__subtitle">hi there</h6>
+					</div>
+				</div>
+				<div class="user-component__column"></div>
+			</div>
+			<div class="friends-screen__channel">
+				<div class="friends-screen__channel-header">
+					<span>Channel</span>
+					<i class="fa-solid fa-chevron-up fa-xs"></i>
+				</div>
+				<div class="user-component">
+					<div class="user-component__column">
+						<img class="user-component__avatar user-component__avatar--sm" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR4lLNgKTbLAcua16jAZdf1j51cl4pEQQ-8Q&usqp=CAU"/>
+						<div class="user-component__text">
+							<h4 class="user-component__title user-component__title--not-bold">Channel</h4>
+						</div>
+					</div>
+					<div class="user-component__column">
+						<div>
+              <span>2</span>
+						  <i class="fa-solid fa-chevron-right fa-xs"></i>
+            </div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+    <div id="splash-screen">
+      <i class="fas fa-comment"></i>
+    </div>
+
+    <div id="no-mobile">
+      <span>Screen is too big - please make it smaller!</span>
+    </div>
+
+    <script src="https://kit.fontawesome.com/e2ad3dbc93.js" crossorigin="anonymous">
     </script>
   </body>
 </html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chats - Kokoa Clone</title>
+  </head>
+
+  <body id="chat-screen">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>Optus</span>
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>11:09</span>
+      </div>
+      <div class="status-bar__column">
+        <span>99%</span>
+        <i class="fa-solid fa-battery-full fa-lg"></i>
+        <i class="fa-solid fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="chats.html">
+          <i class="fas fa-angle-left fa-3x"></i>
+        </a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">Nomad Coders</h1>
+      </div>
+      <div class="alt-header__column">
+        <span><i class="fas fa-search fa-2x"></i></span>
+        <span><i class="fas fa-bars fa-2x"></i></span>
+      </div>
+    </header>
+
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">Tuesday, August 16, 2022</div>
+      <div class="message-row">
+        <img src="https://velog.velcdn.com/images/dlrbwls0302/post/17a3a9a9-5c3a-4e10-8fb6-b7f419d64698/%E1%84%82%E1%85%A9%E1%84%86%E1%85%A1%E1%84%83%E1%85%B3%20%E1%84%8F%E1%85%A9%E1%84%83%E1%85%A5.png"/>
+        <div class="message-row__content">
+          <span class="message__author">Nomad Coders</span>
+          <div class="message__info">
+            <span class="message__bubble">Congrats on finishing Kokoa Clone course!</span>
+            <span class="message__time">11:00</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">Thanks to you!</span>
+            <span class="message__time">11:01</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <form class="reply">
+      <div class="reply__column">
+        <i class="far fa-plus-square fa-lg"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" placeholder="Write a message here!" />
+        <i class="fa-solid fa-face-smile"></i>
+        <button>
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      </div>
+    </form>
+
+    <div id="no-mobile">
+      <span>Screen is too big - please make it smaller!</span>
+    </div>
+
+    <script src="https://kit.fontawesome.com/e2ad3dbc93.js" crossorigin="anonymous">
+    </script>
+  </body>
+</html>
